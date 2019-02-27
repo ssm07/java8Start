@@ -9,6 +9,7 @@ public class Main {
      Greetings greetings=   () ->{
              System.out.println("  Hello world greetings ");
 
+
         };
     }
 }
