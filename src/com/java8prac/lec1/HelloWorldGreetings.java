@@ -1,6 +1,6 @@
 package com.java8prac.lec1;
 
-public  class HelloWorldGreetings implements  Greetings,Salutation {
+public class HelloWorldGreetings extends GreetingBase   implements  Greetings,Salutation   {
 
 
 
@@ -9,6 +9,11 @@ public  class HelloWorldGreetings implements  Greetings,Salutation {
      Greetings greetings= new HelloWorldGreetings();
      greetings.toast();
      greetings.greet();
+
+     Salutation salutation= new HelloWorldGreetings();
+     //The class GreetingBase and interface Salutation both has method salute.
+     //following code will invoke method implementation from the class 'GreetingBase' since has higher precedence than interface.
+     salutation.salute();
 
  }
 
